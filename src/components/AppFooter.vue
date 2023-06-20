@@ -176,13 +176,13 @@
             <h3>DC COMICS</h3>
             <div v-for="(comic, index) in DcComics" :key="index">
                 <ul>
-                    <li>{{ comic.nome }}</li>
+                    <li><a href="">{{ comic.nome }}</a></li>
                 </ul>
             </div>
             <h3>SHOP</h3>
             <div v-for="(shop, index) in shop" :key="index">
                 <ul>
-                    <li>{{ shop.nome }}</li>
+                    <li><a href="">{{ shop.nome }}</a></li>
                 </ul>
             </div>
         </div>
@@ -190,7 +190,7 @@
             <h3>DC</h3>
             <div v-for="(dc, index) in dc" :key="index">
                 <ul>
-                    <li>{{ dc.nome }}</li>
+                    <li><a href="">{{ dc.nome }}</a></li>
                 </ul>
             </div>
         </div>
@@ -198,24 +198,24 @@
             <h3>SITES</h3>
             <div v-for="(site, index) in sites" :key="index">
                 <ul>
-                    <li>{{ site.nome }}</li>
+                    <li><a href="">{{ site.nome }}</a></li>
                 </ul>
             </div>
         </div>
         <div class="img-div">
             <img class="logo-bg" src="/public/dc-logo-bg.png" alt="">
         </div>
-    </div>
-    <div class="footer-bottom-bar">
-        <div class="footer-content">
-            <button>SIGN UP NOW!</button>
-            <div class="footer-right-content">
-                <span>FOLLOW US</span>
-                <img src="/src/assets/footer-facebook.png" alt="">
-                <img src="/src/assets/footer-periscope.png" alt="">
-                <img src="/src/assets/footer-pinterest.png" alt="">
-                <img src="/src/assets/footer-twitter.png" alt="">
-                <img src="/src/assets/footer-youtube.png" alt="">
+        <div class="footer-bottom-bar">
+            <div class="footer-content">
+                <button>SIGN UP NOW!</button>
+                <div class="footer-right-content">
+                    <span>FOLLOW US</span>
+                    <img src="/src/assets/footer-facebook.png" alt="">
+                    <img src="/src/assets/footer-periscope.png" alt="">
+                    <img src="/src/assets/footer-pinterest.png" alt="">
+                    <img src="/src/assets/footer-twitter.png" alt="">
+                    <img src="/src/assets/footer-youtube.png" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -224,33 +224,35 @@
     .footer-container{
         background-image: url('/public/footer-bg.jpg');
         display: flex;
-        position: relative;
-        background-repeat: repeat-x;
-        
+        padding: 0 10rem;  
+        background-repeat: repeat;   
+        position: relative;  
 
         .section{
             width: calc(60% / 3);
         }
 
         h3{
-            padding: 1rem 10rem;
             color: white;
+            padding-top: 1.5rem;
         }
         
         ul{
-            margin: 0rem 10rem;
             li{
-               color: rgb(156, 152, 152);
+               padding: 0.3rem 0;
+               
+               a{
+                color: #959595;
+               };
             }
         }
         .img-div{
-            width: 40%;
             object-fit: contain;
             
             img{
               
                position: relative;
-               bottom: 5rem;
+               bottom: 3rem;
             }
         }
     }
@@ -259,10 +261,9 @@
         width: 100%;
         height: 100px;
         background-color: #202020;
-        z-index: 5;
         position: absolute;
         bottom: 0;
-        transform: translateY(70%);
+        left: 0;
         
         
         .footer-content{
