@@ -172,38 +172,38 @@
 </script>
 <template >
     <div class="footer-container">
-        <div class="section">
-            <h3>DC COMICS</h3>
-            <div v-for="(comic, index) in DcComics" :key="index">
-                <ul>
-                    <li><a href="">{{ comic.nome }}</a></li>
-                </ul>
+        <div class="macro-section">
+            <div class="section">
+                <h3>DC COMICS</h3>
+                <div v-for="(comic, index) in DcComics" :key="index">
+                    <ul>
+                        <li><a href="">{{ comic.nome }}</a></li>
+                    </ul>
+                </div>
+                <h3>SHOP</h3>
+                <div v-for="(shop, index) in shop" :key="index">
+                    <ul>
+                        <li><a href="">{{ shop.nome }}</a></li>
+                    </ul>
+                </div>
             </div>
-            <h3>SHOP</h3>
-            <div v-for="(shop, index) in shop" :key="index">
-                <ul>
-                    <li><a href="">{{ shop.nome }}</a></li>
-                </ul>
+            <div  class="section">
+                <h3>DC</h3>
+                <div v-for="(dc, index) in dc" :key="index">
+                    <ul>
+                        <li><a href="">{{ dc.nome }}</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div  class="section">
-            <h3>DC</h3>
-            <div v-for="(dc, index) in dc" :key="index">
-                <ul>
-                    <li><a href="">{{ dc.nome }}</a></li>
-                </ul>
+            <div  class="section">
+                <h3>SITES</h3>
+                <div v-for="(site, index) in sites" :key="index">
+                    <ul>
+                        <li><a href="">{{ site.nome }}</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div  class="section">
-            <h3>SITES</h3>
-            <div v-for="(site, index) in sites" :key="index">
-                <ul>
-                    <li><a href="">{{ site.nome }}</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="img-div">
-            <img class="logo-bg" src="/public/dc-logo-bg.png" alt="">
+            
         </div>
         <div class="footer-bottom-bar">
             <div class="footer-content">
@@ -218,52 +218,49 @@
                 </div>
             </div>
         </div>
+        
     </div>
 </template>
 <style lang="scss" >
     .footer-container{
         background-image: url('/public/footer-bg.jpg');
-        display: flex;
-        padding: 0 10rem;  
-        background-repeat: repeat;   
-        position: relative;  
-
-        .section{
-            width: calc(60% / 3);
-        }
-
-        h3{
-            color: white;
-            padding-top: 1.5rem;
-        }
+        flex-direction: column;
         
-        ul{
-            li{
-               padding: 0.3rem 0;
-               
-               a{
-                color: #959595;
-               };
-            }
+        
+        .macro-section{
+            display: flex;
+            padding: 2rem 10rem;  
+            background-image: url('/public/dc-logo-bg.png');
+            width: 90%;
+            background-repeat: no-repeat;
+            background-position: right top 65%;   
+                .section{
+                    width: calc(60% / 3);
+                }
+        
+                h3{
+                    color: white;
+                    padding-top: 1.5rem;
+                }
+                
+                ul{
+                    li{
+                    padding: 0.3rem 0;
+                    
+                    a{
+                        color: #959595;
+                    };
+                    }
+                }
+                
         }
-        .img-div{
-            object-fit: contain;
-            
-            img{
-              
-               position: relative;
-               bottom: 3rem;
-            }
-        }
+
     }
 
     .footer-bottom-bar{
         width: 100%;
         height: 100px;
         background-color: #202020;
-        position: absolute;
-        bottom: 0;
-        left: 0;
         
         
         .footer-content{
@@ -275,7 +272,7 @@
 
             button{
                 background-color: transparent;
-                border: 2px solid blue;
+                border: 2px solid #0282F9;
                 padding: 10px 15px;
                 color:white;
             }
@@ -285,7 +282,7 @@
                 align-items: center;
                 
                     span{
-                        color: white;
+                        color: #0282F9;
                         margin: 0rem 0.5rem;
                     }
 
