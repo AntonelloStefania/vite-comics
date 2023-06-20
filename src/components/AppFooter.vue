@@ -223,14 +223,14 @@
 </template>
 <style lang="scss" >
     .footer-container{
-        background-image: url('/public/footer-bg.jpg');
+        background-image: url('/footer-bg.jpg');
         flex-direction: column;
         
         
         .macro-section{
             display: flex;
             padding: 2rem 10rem;  
-            background-image: url('/public/dc-logo-bg.png');
+            background-image: url('/dc-logo-bg.png');
             width: 90%;
             background-repeat: no-repeat;
             background-position: right top 65%;   
