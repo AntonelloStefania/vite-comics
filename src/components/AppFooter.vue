@@ -225,6 +225,8 @@
     .footer-container{
         background-image: url('/footer-bg.jpg');
         flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
         
         
         .macro-section{
@@ -252,7 +254,6 @@
                     };
                     }
                 }
-                
         }
 
     }
