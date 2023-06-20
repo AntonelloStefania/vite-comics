@@ -22,7 +22,7 @@
                         link:'#'
                     },
                     {
-                        section_name : 'comic shop logator',
+                        section_name : 'comic shop locator',
                         section_icon : './src/assets/buy-comics-shop-locator.png',
                         active: false,
                         link:'#'
@@ -55,7 +55,7 @@
 </template>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .nav-container{
     background-color:#0282F9;

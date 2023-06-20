@@ -79,7 +79,7 @@
     </div>
 </template>
 
-<style  lang="scss"  >
+<style  lang="scss"  scoped>
 .active{
     color: #0282F9;
     border-bottom: 8px solid #0282F9;

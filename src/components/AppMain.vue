@@ -8,7 +8,7 @@ export default {
         <h1>--- Content goes here ---</h1>
     </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .main-container{
     height: 200px;
     background-color: black;
