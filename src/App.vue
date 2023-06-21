@@ -16,14 +16,14 @@
 <template >
   <div>
     <AppHeader />
-  </div>
-  <div>
+  
+  
     <AppMain/>
-  </div>
-  <div>
+  
+  
     <AppNav />
-  </div>
-  <div>
+  
+  
     <AppFooter/>
   </div>
 </template>

@@ -87,8 +87,8 @@ export default {
 }
 </script>
 <template >
-    <div class="main-container ">
-        <div class="row jumbotron">
+    <div class="main-container">
+        <div class="jumbotron">
             <div class="col-12 position-relative">
                 <img class="jumboimg" src="/jumbotron.jpg" alt="">
                 <div class="badge-series">CURRENT SERIES</div>

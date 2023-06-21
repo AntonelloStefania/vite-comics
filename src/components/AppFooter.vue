@@ -207,7 +207,7 @@
             </div>
         </div>
         <div class="footer-bottom-bar">
-            <div class="footer-content">
+            <div class="footer-content container">
                 <button>SIGN UP NOW!</button>
                 <div class="footer-right-content">
                     <span class="d-none d-lg-inline">FOLLOW US</span>
@@ -265,7 +265,7 @@
             justify-content: space-between;
             align-items: center;
             height: 100%;
-            padding: 0 10rem;
+            
 
             button{
                 background-color: transparent;
