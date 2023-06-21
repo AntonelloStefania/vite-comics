@@ -223,6 +223,8 @@
     </div>
 </template>
 <style lang="scss" >
+@use '../styles/partials/variables' as *;
+
     .footer-container{
         background-image: url('/footer-bg.jpg');
         flex-direction: column;
@@ -257,7 +259,7 @@
     .footer-bottom-bar{
         width: 100%;
         height: 100px;
-        background-color: #202020;
+        background-color: $secondary_color;
         
         
         .footer-content{
@@ -269,7 +271,7 @@
 
             button{
                 background-color: transparent;
-                border: 2px solid #0282F9;
+                border: 2px solid $primary_color;
                 padding: 10px 15px;
                 color:white;
             }
@@ -279,7 +281,7 @@
                 align-items: center;
                 
                     span{
-                        color: #0282F9;
+                        color: $primary_color;
                         margin: 0rem 0.5rem;
                     }
 

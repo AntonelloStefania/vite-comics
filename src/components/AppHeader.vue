@@ -86,9 +86,10 @@
 </template>
 
 <style  lang="scss"  scoped>
+@use '../styles/partials/variables' as *;
 .active{
-    color: #0282F9;
-    border-bottom: 6px solid #0282F9;
+    color: $primary_color;
+    border-bottom: 6px solid $primary_color;
     padding-bottom: 40px;
 }
 
@@ -111,5 +112,4 @@
 }
 
 
- 
 </style>

@@ -30,5 +30,6 @@
 
 
 <style lang="scss">
-  @use './styles/generals' as *
+  @use './styles/generals' as *;
+  @use './styles/partials/variables' as *
 </style>

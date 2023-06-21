@@ -60,9 +60,10 @@
 
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 
 .nav-container{
-    background-color:#0282F9;
+    background-color:$primary_color;
     ul{ 
         display: flex;
         justify-content: space-around;

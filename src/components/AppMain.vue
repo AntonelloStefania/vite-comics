@@ -105,10 +105,11 @@ export default {
     </div>
 </template>
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 .main-container{
     justify-content: center;
     align-items: center;
-    background-color: #1C1C1C;
+    background-color: $secondary_color;
 }
 
 .jumboimg{
@@ -119,18 +120,18 @@ export default {
 }
 
 .badge-series{
-    background-color: #0282F9;
+    background-color:$primary_color;
     position: absolute;
     bottom: -15px;
-    left: 16%;
+    left: 15.6%;
     color: white;
     font-size: 20px;
     font-weight: bold;
-    padding: 5px 15px;
+    padding: 5px 17px;
 }
 
 .load-btn{
-    background-color: #0282F9;
+    background-color: $primary_color;
     padding: 5px 40px ;
     color: white;
     border: transparent;
