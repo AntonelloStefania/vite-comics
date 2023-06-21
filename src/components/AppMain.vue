@@ -89,13 +89,17 @@ export default {
 <template >
     <div class="main-container ">
         <div class="row jumbotron">
-            <div class="col-12 jumboimg">
-                <img class="" src="/jumbotron.jpg" alt="">
+            <div class="col-12 position-relative">
+                <img class="jumboimg" src="/jumbotron.jpg" alt="">
+                <div class="badge-series">CURRENT SERIES</div>
             </div>
         </div>
         <div class="container">
-            <div class="row series-row">
-                <AppSerie class=" col-6 col-lg-2 col-md-4  px-1    " v-for="(card, index) in series" :key="index" :title="card.series" :myCard="card"/>
+            <div class="row series-row py-2">
+                <AppSerie class=" col-6 col-lg-2 col-md-4  px-1 " v-for="(card, index) in series" :key="index" :title="card.series" :myCard="card"/>
+                <div class="col-12 d-flex justify-content-center">
+                    <button class=" load-btn ">Load More</button>
+                </div>
             </div>
         </div>
     </div>
@@ -105,6 +109,32 @@ export default {
     justify-content: center;
     align-items: center;
     background-color: #1C1C1C;
+}
+
+.jumboimg{
+    width:100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.badge-series{
+    background-color: #0282F9;
+    position: absolute;
+    bottom: -15px;
+    left: 16%;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+.load-btn{
+    background-color: #0282F9;
+    padding: 5px 40px ;
+    color: white;
+    border: transparent;
+    margin-bottom: 1rem;
 }
 
 

@@ -246,6 +246,7 @@
                     
                     a{
                         color: #959595;
+                        font-size: 16px
                     };
                     }
                 }

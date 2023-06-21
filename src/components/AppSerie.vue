@@ -15,8 +15,8 @@
 </template>
 <style lang="scss" scoped>
     img{
-        height: 300px;
-        width:300px;
+        height: 250px;
+        width:200px;
     }
 
     img:hover{
