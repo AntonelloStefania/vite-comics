@@ -42,15 +42,19 @@
 
 
 <template lang="">
-    <div class="nav-container container">
-        <ul>
-            <li v-for="(navLink, index) in navLinks">
-                <a :href="navLink.link">
-                    <img :src="navLink.section_icon" alt="">
-                    <span> {{navLink.section_name.toUpperCase()}}</span>
-                </a>
-            </li>
-        </ul>
+    <div class="nav-container">
+        <div class="container">
+            <div class="rowalign-items-center justify-content-between">
+                <ul class="py-4  d-flex flex-column flex-md-row ">
+                    <li class="d-flex col-12 col-md-auto py-3 py-lg-0" v-for="(navLink, index) in navLinks">
+                        <a :href="navLink.link">
+                            <img :src="navLink.section_icon" alt="">
+                            <span class="d-inline d-md-none d-lg-inline"> {{navLink.section_name.toUpperCase()}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -59,19 +63,23 @@
 
 .nav-container{
     background-color:#0282F9;
-    height: 150px;
     ul{ 
         display: flex;
-        width: 100%;
+        justify-content: space-around;
+        height: 100%;
+        align-items: center;
+        margin-bottom: 0rem;
+        padding-left:0;
+        
         
         li{
-            width: calc(100% / 5 );
-            display: flex;
-            align-items: center;
+            height: 100%;
+            
             
             a{
                 display: flex;
                 align-items: center;
+                height: 100%;
                
                     img{
                     width: 50px;

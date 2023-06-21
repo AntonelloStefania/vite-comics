@@ -70,12 +70,18 @@
 
 <template >
     <div class="container header-container">
-       <img src="/dc-logo.png" alt="logo"/>
-       <div>
-        <ul>
-            <li v-for="(link,index) in links" :key="index" @mouseover="getActiveItem(index)"  > <a :class="links[index].active ? 'active': ''" :href="link.link">{{link.label.toUpperCase()}}</a> </li>
-        </ul>
-       </div>
+        <div class="row flex-column flex-lg-row align-items-center py-2">
+            <div class="col-12 col-md-3 d-flex justify-content-center justify-content-lg-start">
+                <img src="/dc-logo.png" alt="logo"/>
+            </div>
+            <div class="col d-none d-lg-block">
+                <ul>
+                    <li v-for="(link,index) in links" :key="index" @mouseover="getActiveItem(index)"> 
+                        <a :class="links[index].active ? 'active': ''" :href="link.link">{{link.label.toUpperCase()}}</a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </template>
 
