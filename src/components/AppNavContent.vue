@@ -45,7 +45,7 @@
     <div class="nav-container">
         <div class="container">
             <div class="rowalign-items-center justify-content-between">
-                <ul class="py-4  d-flex flex-column flex-md-row ">
+                <ul class="  d-flex flex-column flex-md-row ">
                     <li class="d-flex col-12 col-md-auto py-3 py-lg-0" v-for="(navLink, index) in navLinks">
                         <a :href="navLink.link">
                             <img :src="navLink.section_icon" alt="">
@@ -75,12 +75,18 @@
         
         li{
             height: 100%;
+
+           a:hover{
+                background-color: $primary_color_hover;
+                height:100%
+            }
             
             
             a{
                 display: flex;
                 align-items: center;
                 height: 100%;
+                padding: 1.5rem 0.5rem;
                
                     img{
                     width: 50px;

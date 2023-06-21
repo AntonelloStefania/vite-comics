@@ -134,9 +134,15 @@ export default {
     background-color: $primary_color;
     padding: 5px 40px ;
     color: white;
-    border: transparent;
+    border: 1px solid $primary_color;
     margin-bottom: 1rem;
     font-weight: bold;
+}
+
+.load-btn:hover{
+    background-color:$primary_color_hover;
+    border:1px solid $primary_color;
+    
 }
 
 

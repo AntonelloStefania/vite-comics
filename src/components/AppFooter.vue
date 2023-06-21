@@ -211,11 +211,21 @@
                 <button>SIGN UP NOW!</button>
                 <div class="footer-right-content">
                     <span class="d-none d-lg-inline">FOLLOW US</span>
-                    <img src="/src/assets/footer-facebook.png" alt="">
-                    <img src="/src/assets/footer-periscope.png" alt="">
-                    <img src="/src/assets/footer-pinterest.png" alt="">
-                    <img src="/src/assets/footer-twitter.png" alt="">
-                    <img src="/src/assets/footer-youtube.png" alt="">
+                    <a href="">
+                        <img src="/src/assets/footer-facebook.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/src/assets/footer-periscope.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/src/assets/footer-pinterest.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/src/assets/footer-twitter.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="/src/assets/footer-youtube.png" alt="">
+                    </a>
                 </div>
             </div>
         </div>
@@ -250,6 +260,10 @@
                         color: #959595;
                         font-size: 16px
                     };
+
+                    a:hover{
+                        color: white;
+                    }
                     }
                 }
         
@@ -276,6 +290,10 @@
                 color:white;
             }
 
+            button:hover{
+                background-color: $primary_color;
+            }
+
             .footer-right-content{
                 display: flex;
                 align-items: center;
@@ -288,6 +306,7 @@
                     img{
                         margin: 0rem 0.275rem;
                     }
+
             }
 
         }
