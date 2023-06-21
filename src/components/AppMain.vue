@@ -98,7 +98,7 @@ export default {
             <div class="row series-row py-2">
                 <AppSerie class=" col-6 col-lg-2 col-md-4  px-1 " v-for="(card, index) in series" :key="index" :title="card.series" :myCard="card"/>
                 <div class="col-12 d-flex justify-content-center">
-                    <button class=" load-btn ">Load More</button>
+                    <button class=" load-btn ">LOAD MORE</button>
                 </div>
             </div>
         </div>
@@ -135,6 +135,7 @@ export default {
     color: white;
     border: transparent;
     margin-bottom: 1rem;
+    font-weight: bold;
 }
 
 
